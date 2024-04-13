@@ -17,6 +17,14 @@ jobs:
                     username: ${{ vars.DOKCER_USERNAME }}
                     password: ${{ secrets.DOCKER_TOKEN }}
 
+            - 
+                name: Docker Login
+                uses: actions/build-and-push-action@v3
+                with:
+                    context: .
+                    push: true
+                    tags: blueninjas/planet:latest
+
 
                     
 
