@@ -21,8 +21,7 @@ jobs:
                 name: Docker Login
                 uses: docker/build-push-action@v5
                 with:
-                    dockerfile: ./Dockerfile
-                    context: .
+                    context: ./Dockerfile
                     push: false
                     tags: blueninjas/planet:latest
 
